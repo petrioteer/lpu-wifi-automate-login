@@ -8,9 +8,9 @@ service = Service('C:\chromedriver.exe')
 
 options = Options()
 options.add_argument('--headless=new')
-driver = webdriver.Chrome(service=s, options=options)
+driver = webdriver.Chrome(service=service, options=options)
 
-driver.implicity_wait(3)
+driver.implicitly_wait(2)
 
 def opening_browser():
     driver.get("https://internet.lpu.in/24online/webpages/client.jsp")
@@ -35,6 +35,6 @@ def opening_browser():
 
     click_send = driver.find_element(by=By.ID, value ="loginbtn")
     click_send.click()
-    print("Login Sucessful, Closing Browser...")
+    print("Login Successful, Closing Browser...")
 
 opening_browser()
