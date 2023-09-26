@@ -2,7 +2,9 @@
 
 This script is tested with Google Chrome <b>Version 117.0.5938.92 </b> (Official Build) (64-bit).
 <br>
-## Edit the automate_login.py file with your own Credentials in place of placeholder text. 
+
+### 🛑 Edit the automate_login.py file with your own Credentials in place of placeholder text. 
+
 <br>Make sure to download chromedriver for the same version for the script to function properly.
 <br>
 <br>
