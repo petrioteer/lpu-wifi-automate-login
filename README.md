@@ -13,7 +13,7 @@ https://googlechromelabs.github.io/chrome-for-testing/
 
 <br>
 Place the chromedriver into the the default C:\ directory. <br>
-Example --> "C:\chromedriver.exe"
+Example --> `C:\chromedriver.exe`
 
 ## 👨‍💻 Make the Script run on Startup 
 - Create a TXT file and type the location of your scipt on your computer. Ex.: "cd /d D:\folder-name" <br> (here give the name of the drive and the folder where you have stored the script)
