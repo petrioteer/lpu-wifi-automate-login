@@ -12,8 +12,6 @@ Place the chromedriver into the the default C:\ directory. <br>
 Example --> "C:\chromedriver.exe"
 
 ## 👨‍💻 Make the Script run on Startup 
-
-To make the script run on startup:
 - Create a TXT file and type the location of your scipt on your computer. Ex.: "cd /d D:\folder-name" (here give the name of the drive and the folder where you have stored the scipt)
 - Hopefully Python is already installed, so just on the next line in the same text file - type: "python automate_login.py"  (without the quotation marks)
 - Now, save the text file but replace the extension .txt with .bat - this will create a windows batch file.
