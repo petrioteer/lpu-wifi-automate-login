@@ -9,4 +9,4 @@ https://googlechromelabs.github.io/chrome-for-testing/
 
 <br>
 Place the chromedriver into the the default C:\ directory. <br>
--Example --> "C:\chromedriver.exe"
+Example --> "C:\chromedriver.exe"
