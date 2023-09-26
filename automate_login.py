@@ -1,17 +1,16 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-#required for headless
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 
-#setting location of webdriver
-s = Service('C:\chromedriver.exe')
+#setting location of webdriver -- set your own location 
+service = Service('C:\chromedriver.exe')
 
 options = Options()
-options.headless = False
+options.add_argument('--headless=new')
 driver = webdriver.Chrome(service=s, options=options)
 
-#list_data = []
+driver.implicity_wait(3)
 
 def opening_browser():
     driver.get("https://internet.lpu.in/24online/webpages/client.jsp")
