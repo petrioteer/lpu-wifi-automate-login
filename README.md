@@ -8,4 +8,6 @@ This script is tested with Google Chrome <b>Version 117.0.5938.92 </b> (Official
 https://googlechromelabs.github.io/chrome-for-testing/ 
 
 <br>
-Place the chromedriver into the the default C:\ directory. Example --> "C:\chromedriver.exe"
+Place the chromedriver into the the default C:\ directory. 
+<br>
+#### Example --> "C:\chromedriver.exe"
