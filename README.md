@@ -21,7 +21,7 @@ Place the chromedriver into the the default `C:\` directory. <br>
 - Create a TXT file and mention the location of `automate_login.py` like `cd /d D:\folder-name` <br> where `D:\folder-name` is replaced by the directory you have saved your `automate_login.py` script in.
 - Hopefully Python is already installed, so just on the next line in the same text file add `python automate_login.py`
 - Now, save the text file but replace the extension .txt with .bat - this will create a windows batch file.
-- Using Windows+R shortcut key to open Run, type **shell:startup** in the text box and click ok.
+- Using Windows+R shortcut key to open Run, type **`shell:startup`** in the text box and click ok.
 - It will open a folder where you can put your .bat file that you created.
 
 ## Congrats, you just saved yourself the hassle of logging in again and again. 🥳🥳
