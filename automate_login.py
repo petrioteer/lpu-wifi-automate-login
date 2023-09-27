@@ -35,6 +35,6 @@ def opening_browser():
 
     click_send = driver.find_element(by=By.ID, value ="loginbtn")
     click_send.click()
-    print("Login Successful, Closing Browser...")
+    print("Login Successful, Exiting...")
 
 opening_browser()
