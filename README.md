@@ -6,8 +6,8 @@ This script is tested with Google Chrome <b>Version 117.0.5938.92 </b> (Official
 ### 🛑 **Edit the automate_login.py file with your own Credentials in place of placeholder text**
 
 <br>Make sure to download chromedriver for the same version for the script to function properly.
-<br>To install selenium, run `pip install selenium` on command Prompt
 <br>
+<br>If `pip` is not install, first install `pip`, then install `selenium` with `pip install selenium` on command Prompt 
 
 ### Below is the website link to download chromedriver.
 > https://googlechromelabs.github.io/chrome-for-testing/ 
