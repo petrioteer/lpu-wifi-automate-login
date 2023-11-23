@@ -1,3 +1,5 @@
+# README not Updated 
+
 # 🤖 Automation Script for logging into LPU Wifi
 
 This script is tested with Google Chrome <b>Version 117.0.5938.92 </b> (Official Build) (64-bit).
