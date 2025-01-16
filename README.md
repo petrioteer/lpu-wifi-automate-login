@@ -1,8 +1,8 @@
-# README not Updated 
+# README (UPDATED)
 
 # 🤖 Automation Script for logging into LPU Wifi
 
-This script is tested with Google Chrome <b>Version 117.0.5938.92 </b> (Official Build) (64-bit).
+This script is tested with Google Chrome <b> Version 132.0.6834.84 </b> (Official Build) (64-bit).
 <br>
 
 ### 🛑 **Edit the automate_login.py file with your own Credentials in place of placeholder text**

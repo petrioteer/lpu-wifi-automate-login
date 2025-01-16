@@ -1,6 +1,10 @@
+import os
 import asyncio
 from pyppeteer import launch
 from pyppeteer.errors import PageError
+from dotenv import load_dotenv
+
+load_dotenv()
 
 username = os.getenv('REGNO')
 password = os.getenv('PASSWORD')
