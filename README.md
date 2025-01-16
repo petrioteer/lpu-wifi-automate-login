@@ -17,7 +17,9 @@ Download the script `get-pip.py`, from [this link.](https://bootstrap.pypa.io/ge
 Open a terminal/command prompt, `cd` to the folder containing the `get-pip.py` file and run:
 
 `C:> py get-pip.py`
-<br>Then, clone the repository with `git clone https://github.com/petrioteer/lpu-wifi-automate-login.git` in your home directory.
+<br>
+
+Then, clone the repository with `git clone https://github.com/petrioteer/lpu-wifi-automate-login.git` in your home directory.
 <br>
 
 Place the folder in your `C:` drive.
