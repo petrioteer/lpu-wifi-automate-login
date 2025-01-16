@@ -1,47 +1,52 @@
-import os
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from dotenv import load_dotenv
-
-load_dotenv()
+import asyncio
+from pyppeteer import launch
+from pyppeteer.errors import PageError
 
 username = os.getenv('REGNO')
 password = os.getenv('PASSWORD')
-#setting location of webdriver -- set your own location 
-service = Service('C:\chromedriver.exe')
 
-options = Options()
-options.add_argument('--headless=new')
-driver = webdriver.Chrome(service=service, options=options)
+import asyncio
+from pyppeteer import launch
+from pyppeteer.errors import PageError
 
-driver.implicitly_wait(2)
+username = '12320263'
+password = 'Itesh@2003'
+url = 'https://internet.lpu.in/24online/webpages/client.jsp'
 
-def opening_browser():
-    driver.get("https://internet.lpu.in/24online/webpages/client.jsp")
-    print("starting Driver...")
+
+async def login():
+
+    chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
+
+
+
+    browser = await launch(
+        headless=False,
+        executablePath=chrome_path,
+        )
+      
+    page = await browser.newPage()
+
+    await page.goto(url) 
+
+    try:
+        await page.click('#agreepolicy')
+    except PageError:
+        print("\n\n------------------\nAlready logged In!\n------------------")
+        return
+
+    #await page.waitForSelector('#loginbtn', {'visible': True})
+
+
+    await page.type('input[name = "username"]', username)  
+    await page.type('input[name = "password"]', password)  
+
     
-    
-    Select_Box_Name = driver.find_element(by=By.NAME, value = "username")
-    Select_Box_Name.click()
-    
+    await page.click('#loginbtn')
 
-    Select_Box_Name.send_keys(username)
     
-    Select_Box_Name = driver.find_element(by=By.NAME, value = "password")
-    Select_Box_Name.click()
+    print("\n\n------------------\nLogin Succesful!\n------------------")
+    await browser.close()
     
 
-    Select_Box_Name.send_keys(password)
-
-    Select_Box_Name = driver.find_element(by=By.ID, value = "agreepolicy")
-    Select_Box_Name.click()
-    
-
-    click_send = driver.find_element(by=By.ID, value ="loginbtn")
-    click_send.click()
-
-    print("Login Successful, Exiting...")
-
-opening_browser()
+asyncio.get_event_loop().run_until_complete(login())
