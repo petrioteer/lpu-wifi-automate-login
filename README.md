@@ -5,7 +5,7 @@
 This script is tested with Google Chrome <b> Version 132.0.6834.84 </b> (Official Build) (64-bit).
 <br>
 
-### 🛑 **Edit the automate_login.py file with your own Credentials in place of placeholder text**
+### 🛑 **Create a text file and rename it with extension as .env**
 
 <br>Make sure to download chromedriver for the same version for the script to function properly.
 <br>
