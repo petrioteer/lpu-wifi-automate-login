@@ -28,15 +28,6 @@ After that, open a terminal at that location and run the following command:<br>
 
 `pip install requirements.txt`
 <br>
-
-### Below is the website link to download chromedriver
->
-> <https://googlechromelabs.github.io/chrome-for-testing/>
-<br>
-
-Place the chromedriver into the the default `C:\` directory. <br>
-***Example -->*** `C:\chromedriver.exe`
-
 ## 👨‍💻 Make the Script run on Startup
 
 - Create a TXT file and mention the location of `automate_login.py` like `cd /d C:\lpu-wifiautomate-login`. It is the directory where you have saved your `automate_login.py` script in.
