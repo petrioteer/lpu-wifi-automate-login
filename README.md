@@ -2,7 +2,7 @@
 
 # 🤖 Automation Script for logging into LPU Wifi
 
-This script is tested with Google Chrome <b> Version 132.0.6834.84 </b> (Official Build) (64-bit).
+This script is tested with Google Chrome <b> Version 132.0.6834.160 </b> (Official Build) (64-bit).
 <br>
 
 ### 🛑 **Create a text file and rename it with extension as .env**
