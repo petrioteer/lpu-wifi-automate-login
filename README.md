@@ -6,7 +6,7 @@ This script is tested with Google Chrome <b> Version 132.0.6834.160 </b> (Offici
 <br>
 
 ### 🛑 **Prerequisites**
-<br>If `pip` is not installed, then install `pip`.
+If `pip` is not installed, then install `pip`.
 <br>
 
 This is a Python script that uses some bootstrapping logic to install pip.
