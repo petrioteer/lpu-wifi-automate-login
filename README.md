@@ -5,7 +5,7 @@
 This script is tested with Google Chrome <b> Version 132.0.6834.160 </b> (Official Build) (64-bit).
 <br>
 
-### 🛑 **Create a text file and rename it with extension as .env**
+### 🛑 **Prerequisites**
 
 <br>If `pip` is not installed, then install `pip`.
 <br>
@@ -18,8 +18,8 @@ Open a terminal/command prompt, `cd` to the folder containing the `get-pip.py` f
 
 `C:> py get-pip.py`
 <br>
-
-Then, clone the repository with `git clone https://github.com/petrioteer/lpu-wifi-automate-login.git` in your home directory.
+### 📐 Setup
+Clone the repository with `git clone https://github.com/petrioteer/lpu-wifi-automate-login.git` in your home directory.
 <br>
 
 Place the folder in your `C:` drive.
