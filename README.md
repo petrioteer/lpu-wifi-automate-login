@@ -28,7 +28,7 @@ Go inside the folder and put your RegNo and Password for wifi login inside `.env
 
 After that, open a terminal at that location and run the following command:<br>
 
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 <br>
 ## 👨‍💻 Make the Script run on Startup
 
