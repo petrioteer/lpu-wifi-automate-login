@@ -12,7 +12,7 @@ async function login() {
   const chromePath = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     executablePath: chromePath
   });
 
