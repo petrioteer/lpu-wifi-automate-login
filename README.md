@@ -1,4 +1,7 @@
-# README (UPDATED)
+# README (NOT UPDATED)
+
+# New Chrome extension available! 
+# ----check above----
 
 # 🤖 Automation Script for logging into LPU Wifi
 
