@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LPU WiFi Login</title>
+  <style>
+    html, body {
+      width: 320px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: #e8eaed;
+      background-color: #292a2d;
+      overflow: hidden;
+    }
+    
+    /* Remove body padding */
+    body {
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background: #35363a;
+      padding: 16px;
+      margin: 0; /* Remove margin */
+    }
+
+    h3 {
+      margin: 0 0 16px 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #e8eaed;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 8px 0;
+      border: 1px solid #5f6368;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+      background-color: #202124;
+      color: #e8eaed;
+    }
+
+    input:focus {
+      border-color: #8ab4f8;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px 16px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 520;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .primary-btn {
+      background: #8ab4f8;
+      color: #202124;
+    }
+
+    .primary-btn:hover {
+      background: #a1c2ff;
+    }
+
+    .danger-btn {
+      background: #f28b82;
+      color: #202124;
+    }
+
+    .danger-btn:hover {
+      background: #f6aea7;
+    }
+
+    .divider {
+      margin: 12px 0;
+      border-top: 3px solid #5f6368;
+    }
+
+    .interval-control {
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    .interval-control h4 {
+      margin: 8px 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: #e8eaed;
+    }
+
+    .interval-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8px;
+    }
+
+    .interval-buttons button {
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      margin: 0 8px;
+      border-radius: 50%;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #5f6368;
+      color: #e8eaed;
+    }
+
+    .interval-buttons button:hover {
+      background: #7d7e82;
+    }
+
+    #interval-value {
+      font-size: 16px;
+      min-width: 30px;
+      text-align: center;
+    }
+
+    /* Slider styles */
+    .slider-container {
+      width: 100%;
+      margin: 15px 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .slider {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      background: #5f6368;
+      outline: none;
+      margin: 15px 0;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 0;
+      height: 0;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .slider-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      font-size: 12px;
+      color: #e8eaed;
+    }
+    .current-interval {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #e8eaed;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="loginSection">
+    <h3>LPU WiFi Login</h3>
+    <input type="text" id="regno" placeholder="Registration Number">
+    <input type="password" id="password" placeholder="Password">
+    <button id="save" class="primary-btn">Save Credentials</button>
+  </div>
+
+  <div class="container" id="reloadSection" style="display: none;">
+    <h3>WiFi Connection</h3>
+    <button id="reload" class="primary-btn">Check & Reload Connection</button>
+    <div class="divider"></div>
+    <button id="reset" class="danger-btn">Reset Credentials</button>
+    <div class="interval-control">
+      <h4>Check Interval</h4>
+      <div class="slider-container">
+        <input type="range" min="0" max="4" value="1" class="slider" id="interval-slider">
+        <div class="slider-labels">
+          <span>1m</span>
+          <span>5m</span>
+          <span>15m</span>
+          <span>30m</span>
+          <span>1h</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
